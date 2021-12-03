@@ -18,7 +18,7 @@ r = requests.get(f'https://adventofcode.com/2021/day/{day}/input', headers={
 
 print(f'✔ File {day}.txt fetched')
 
-infile_path = f'solutions/in/{day}.txt'
+infile_path = f'src/in/{day}.txt'
 with open(infile_path, 'w') as f:
     f.write(r.text)
     print(f'✔ File saved as {infile_path}')
