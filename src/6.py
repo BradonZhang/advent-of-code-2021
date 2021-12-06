@@ -6,13 +6,11 @@ with open('in/6.txt') as f:
 # Part 1
 
 for i in range(80):
-    to_append = []
-    for j, f in enumerate(fish):
+    for j in range(len(fish)):
         fish[j] -= 1
         if fish[j] == -1:
-            to_append.append(8)
+            fish.append(8)
             fish[j] = 6
-    fish += to_append
 
 print(len(fish))
 
