@@ -17,8 +17,5 @@ print(best)
 
 best = float('inf')
 for i in range(a, b + 1):
-    def get_score(p):
-        d = abs(p - i)
-        return d * (d + 1) // 2
-    best = min(best, sum(get_score(p) for p in pos))
+    best = min(best, sum((d := abs(p - i)) * (d + 1) // 2 for p in pos))
 print(best)
