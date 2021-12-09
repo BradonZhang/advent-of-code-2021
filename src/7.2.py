@@ -1,1 +1,1 @@
-print(min(sum(abs(p-i)for p in list(map(int,open('in/7.txt').read().split(',')))) for i in range(1000)),min(sum((d:=abs(p-i))*(d + 1)//2 for p in list(map(int,open('in/7.txt').read().split(','))))for i in range(1000)))
+print(min(sum(abs(p-i)for p in list(map(int,open('in/7.txt').read().split(','))))for i in range(1000)),min(sum((d:=abs(p-i))*(d+1)//2 for p in list(map(int,open('in/7.txt').read().split(','))))for i in range(1000)))
