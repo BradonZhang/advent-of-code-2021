@@ -8,6 +8,8 @@ R, C = grid.shape
 D = [(-1, 0), (0, -1), (0, 1), (1, 0)]
 
 
+# Part 1
+
 pq = [(0, 0, 0)]
 lowest = {}
 visited = set()
@@ -34,6 +36,8 @@ while len(pq):
 
 print(lowest[R - 1, C - 1])
 
+
+# Part 2
 
 pq = [(0, 0, 0)]
 lowest = {}
