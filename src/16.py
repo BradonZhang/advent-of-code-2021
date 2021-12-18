@@ -4,7 +4,7 @@ import math
 with open('in/16.txt') as f:
     bin_str = format(int(f.read(), 16), 'b')
     bin_str = '0' * ((4 - len(bin_str)) % 4) + bin_str
-    stream = deque(int(x) for x in bin_str)
+    stream = deque(map(int, bin_str))
 
 class Packet:
     def __init__(self, version, packtype, val=None, subpacks=[]) -> None:

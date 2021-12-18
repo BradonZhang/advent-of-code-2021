@@ -1,5 +1,4 @@
 import math
-from collections import deque
 from copy import deepcopy
 
 with open('in/18.txt') as f:
