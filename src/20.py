@@ -13,7 +13,7 @@ for x, row in enumerate(init_grid):
             max_x = max(max_x, x)
             max_y = max(max_y, y)
 
-outer = False
+outer = '.'
 for t in range(50):
     min_x -= 1
     min_y -= 1
