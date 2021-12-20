@@ -1,5 +1,3 @@
-import numpy as np
-
 with open('in/20.txt') as f:
     en, init_grid = f.read().split('\n\n')
     init_grid = init_grid.splitlines()
