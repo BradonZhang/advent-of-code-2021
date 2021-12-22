@@ -62,8 +62,8 @@ while q:
             s2.pos = dv
             q.append(s2)
 
-assert sum(scanner.absolute is not None for scanner in scanners) == len(scanners)
-assert sum(scanner.pos is not None for scanner in scanners) == len(scanners)
+assert all(scanner.absolute is not None for scanner in scanners)
+assert all(scanner.pos is not None for scanner in scanners)
 
 # Part 1
 print(len(beacons))
